@@ -24,4 +24,22 @@ public class EnemyAiming :  EnemyBase
         InvTime();
         AimToTarget();
     }
+    void Start()
+    {
+        Target = GameObject.Find("PlayerObj");
+        //bulletObj.GetComponent<BulletScript>().target = Target;
+    }
+    protected override void RealShoot(/*GameObject target*/)
+    {
+        if (bulletObj != null)
+        {
+            GameObject currBullet;
+            currBullet = Instantiate(bulletObj);
+            currBullet.transform.position = transform.position;
+            currBullet.GetComponent<BulletScript>().target = Target;
+            //currBullet.GetComponent<BulletScript>().target
+        }
+
+
+    }
 }

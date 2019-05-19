@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 8241695710835109775}
   - component: {fileID: 8241695710835109774}
   - component: {fileID: 8241695710835109769}
-  - component: {fileID: 8241695710835109768}
   - component: {fileID: 8241695710835109771}
   - component: {fileID: 8241695710835109770}
   - component: {fileID: 8241695710835109765}
   m_Layer: 0
   m_Name: EnemyTest5 base
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,32 +105,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8241695710835109768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8241695710835109764}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61bd8b7c81711304d8aa21f5f6fedb0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletObj: {fileID: 0}
-  moveSpeed: 3
-  health: 15
-  reloadTime: 30
-  invurnableTimer: 20
-  Moves:
-  - d
-  - dddr
-  - ddr
-  - dr
-  - drrr
-  Duration: 6400000046000000640000004600000064000000
-  currDuration: 0
-  br: 0
 --- !u!61 &8241695710835109771
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -189,8 +162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8a420c3eab82048b686303b2d718b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObj: {fileID: 0}
-  moveSpeed: 4
+  bulletObj: {fileID: 3161659953592167589, guid: d25b4fd54cc4521419a6cc09b64cbc7a,
+    type: 3}
+  moveSpeed: 2
   health: 5
   reloadTime: 50
   invurnableTimer: 30

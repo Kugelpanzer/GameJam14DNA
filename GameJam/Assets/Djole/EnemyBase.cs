@@ -38,7 +38,7 @@ public class EnemyBase : MonoBehaviour
         }
     }
     
-    protected void RealShoot(/*GameObject target*/)
+    protected virtual void RealShoot(/*GameObject target*/)
     {
         if (bulletObj != null)
         {

@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 681455086115566682, guid: 1d13f369e5a53e641af563c8802bd1db,
         type: 3}
       propertyPath: m_Name
-      value: EnemyTest3 tank left
+      value: EnemyTest3 tank left Variant
       objectReference: {fileID: 0}
     - target: {fileID: 681455086115566757, guid: 1d13f369e5a53e641af563c8802bd1db,
         type: 3}
@@ -71,7 +71,8 @@ PrefabInstance:
         type: 3}
       propertyPath: bulletObj
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3161659953592167589, guid: d25b4fd54cc4521419a6cc09b64cbc7a,
+        type: 3}
     - target: {fileID: 681455086115566752, guid: 1d13f369e5a53e641af563c8802bd1db,
         type: 3}
       propertyPath: Moves.Array.data[1]

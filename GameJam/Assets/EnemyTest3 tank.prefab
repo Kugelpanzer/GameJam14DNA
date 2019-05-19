@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 681455086115566683}
   m_Layer: 0
   m_Name: EnemyTest3 tank
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,8 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bd8b7c81711304d8aa21f5f6fedb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObj: {fileID: 0}
-  moveSpeed: 2
+  bulletObj: {fileID: 3161659953592167589, guid: d25b4fd54cc4521419a6cc09b64cbc7a,
+    type: 3}
+  moveSpeed: 0.6
   health: 30
   reloadTime: 20
   invurnableTimer: 35
