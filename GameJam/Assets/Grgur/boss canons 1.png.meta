@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 8b5477cc529e25448b86576e698a3f2d
+guid: 2e477a39b6167354c9d97e238fd34c33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5721429013892012919
-    second: hit marker 1_0
+      213: -9123384320354892703
+    second: boss canons 1_0
   - first:
-      213: -2088702413322149362
-    second: hit marker 1_1
+      213: -6947274829479771009
+    second: boss canons 1_1
   - first:
-      213: -3522710522044855124
-    second: hit marker 1_2
+      213: 1492409265371447496
+    second: boss canons 1_2
   - first:
-      213: -1465333844515631315
-    second: hit marker 1_3
+      213: -3235384460443925797
+    second: boss canons 1_3
+  - first:
+      213: -7332898357117245449
+    second: boss canons 1_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hit marker 1_0
+      name: boss canons 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 15
-        height: 16
+        y: 25
+        width: 18
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc2889c9377f9c149b3b1a5d58b5b48b
-      internalID: -5721429013892012919
+      spriteID: 01f64113f1bb06a4d9dbc71928a1bfa3
+      internalID: -9123384320354892703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit marker 1_1
+      name: boss canons 1_1
       rect:
         serializedVersion: 2
-        x: 15
-        y: 16
-        width: 15
-        height: 16
+        x: 18
+        y: 25
+        width: 18
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +134,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9640f7b8e5dfc04891a1bb3d884f29e
-      internalID: -2088702413322149362
+      spriteID: d43825ec7e5a53342945945caf65c632
+      internalID: -6947274829479771009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit marker 1_2
+      name: boss canons 1_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 25
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628551bdc92c02645bc812b966382753
+      internalID: 1492409265371447496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss canons 1_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 15
-        height: 16
+        width: 18
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 005297149c3039e4aaa266892d2eaa36
-      internalID: -3522710522044855124
+      spriteID: 7cf8c0ed8f481af4e8171b1b0e7eabf9
+      internalID: -3235384460443925797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit marker 1_3
+      name: boss canons 1_4
       rect:
         serializedVersion: 2
-        x: 15
+        x: 18
         y: 0
-        width: 15
-        height: 16
+        width: 18
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40943cc25b4fca340ad9985157d91354
-      internalID: -1465333844515631315
+      spriteID: 0f09eb935ec956748835161a048c7628
+      internalID: -7332898357117245449
       vertices: []
       indices: 
       edges: []
@@ -182,7 +206,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1f2982c3f3f68be4c8a522c0c54079ca
+    spriteID: d9e2759a1e58f2f4a97562b6e175dc20
     internalID: 0
     vertices: []
     indices: 
