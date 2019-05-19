@@ -119,8 +119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletObj: {fileID: 3161659953592167589, guid: d25b4fd54cc4521419a6cc09b64cbc7a,
     type: 3}
-  moveSpeed: 0.6
-  health: 30
+  moveSpeed: 1
+  health: 12
   reloadTime: 20
   invurnableTimer: 35
   Moves:
@@ -129,7 +129,7 @@ MonoBehaviour:
   - ddr
   - dr
   - drrr
-  Duration: 9600000069000000960000006900000096000000
+  Duration: 4b0000003c0000004b0000003c0000004b000000
   currDuration: 0
   br: 0
 --- !u!61 &681455086115566759

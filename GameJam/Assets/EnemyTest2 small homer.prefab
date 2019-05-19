@@ -165,7 +165,7 @@ MonoBehaviour:
   bulletObj: {fileID: 8831318006056157582, guid: b235da94f3a3143419736cb997e79bcf,
     type: 3}
   moveSpeed: 3
-  health: 10
+  health: 7
   reloadTime: 40
   invurnableTimer: 30
   Target: {fileID: 0}

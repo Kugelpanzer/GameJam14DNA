@@ -120,12 +120,12 @@ MonoBehaviour:
   bulletObj: {fileID: 3161659953592167589, guid: d25b4fd54cc4521419a6cc09b64cbc7a,
     type: 3}
   moveSpeed: 2
-  health: 15
+  health: 6
   reloadTime: 10
   invurnableTimer: 25
   Moves:
-  - d
-  - dddr
+  - dr
+  - r
   - r
   - r
   - r
@@ -134,7 +134,7 @@ MonoBehaviour:
   - l
   - l
   - l
-  Duration: 640000004600000064000000460000003c0000003c00000046000000640000004600000064000000
+  Duration: 320000002300000032000000230000001e0000001e00000023000000320000002300000032000000
   currDuration: 0
   br: 0
 --- !u!61 &8117487023215653104

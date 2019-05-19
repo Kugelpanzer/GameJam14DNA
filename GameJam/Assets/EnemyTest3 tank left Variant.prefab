@@ -93,5 +93,35 @@ PrefabInstance:
       propertyPath: Moves.Array.data[4]
       value: dlll
       objectReference: {fileID: 0}
+    - target: {fileID: 681455086115566752, guid: 1d13f369e5a53e641af563c8802bd1db,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 681455086115566752, guid: 1d13f369e5a53e641af563c8802bd1db,
+        type: 3}
+      propertyPath: Duration.Array.data[0]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 681455086115566752, guid: 1d13f369e5a53e641af563c8802bd1db,
+        type: 3}
+      propertyPath: Duration.Array.data[1]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 681455086115566752, guid: 1d13f369e5a53e641af563c8802bd1db,
+        type: 3}
+      propertyPath: Duration.Array.data[2]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 681455086115566752, guid: 1d13f369e5a53e641af563c8802bd1db,
+        type: 3}
+      propertyPath: Duration.Array.data[3]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 681455086115566752, guid: 1d13f369e5a53e641af563c8802bd1db,
+        type: 3}
+      propertyPath: Duration.Array.data[4]
+      value: 75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d13f369e5a53e641af563c8802bd1db, type: 3}
