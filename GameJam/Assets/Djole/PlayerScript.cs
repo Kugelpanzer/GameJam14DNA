@@ -23,8 +23,14 @@ public class PlayerScript : MonoBehaviour
     private int currDashTime,currDash,currDashReload;
 
     public float laserDistance = 0.2f;
-    private List<Vector2> point = new List<Vector2>();
+    public float laserStep = 0.01f;
 
+    private float currAngle;
+    private List<Vector2> point = new List<Vector2>();
+    private List<Vector2> currPoint = new List<Vector2>();
+
+    public GameObject bigLaser;
+    public GameObject smallLaserPos;
 
     // public int protectedTimer;// time while imune to demage
 
@@ -126,14 +132,59 @@ public class PlayerScript : MonoBehaviour
         {
             point.Add(new Vector2(i, 2*laserDistance));
         }
-        foreach (Vector2 ii in point)
-            Debug.Log(ii);
+        /*foreach (Vector2 ii in point)
+            Debug.Log(ii);*/
+    }
+
+    private void Firing()
+    {
+        LaserPos bl = bigLaser.GetComponent<LaserPos>();
+        LaserPos sl = smallLaserPos.GetComponent<LaserPos>();
+        LaserList sList = smallLaserPos.GetComponent<LaserList>();
+        bl.onScreen = false;
+        if (currDashReload <= 0)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                if (currAngle <= laserDistance)
+                {
+                    currAngle += laserStep;
+                }
+            }
+            else
+            {
+                if (currAngle>0)
+                {
+                    currAngle -= laserStep;
+                }
+                if (currAngle <= 0)
+                {
+                    bl.onScreen = true;
+                }
+            }
+            if (!bl.onScreen)
+            {
+                sl.onScreen = true;
+                currPoint[0] = Vector2.Lerp(point[1], point[0], currAngle);
+                currPoint[1] = Vector2.Lerp(point[2], point[1], currAngle);
+                currPoint[2] = Vector2.up;
+                currPoint[3] = Vector2.Lerp(point[2], point[3], currAngle);
+                currPoint[4] = Vector2.Lerp(point[3], point[4], currAngle);
+
+            }
+            else
+            {
+                sl.onScreen = false;
+            }
+        }
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        Firing();
         Dashing();
         InvTime();
         MoveScript();
