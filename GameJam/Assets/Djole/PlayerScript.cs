@@ -38,6 +38,8 @@ public class PlayerScript : MonoBehaviour
     public int invurnableTimer;
     private int currInvTime;
 
+    private Vector3 cc;
+
     public void TakeDemage(int demage)
     {
         if (!inv)
@@ -128,6 +130,10 @@ public class PlayerScript : MonoBehaviour
     }
     void Start()
     {
+        for(int i =0; i < 5; i++)
+        {
+            currPoint.Add(new Vector2());
+        }
         for(float i=-2* laserDistance; i<=2* laserDistance; i+= laserDistance)
         {
             point.Add(new Vector2(i, 2*laserDistance));
@@ -157,7 +163,7 @@ public class PlayerScript : MonoBehaviour
                 {
                     currAngle -= laserStep;
                 }
-                if (currAngle <= 0)
+               if (currAngle <= 0)
                 {
                     bl.onScreen = true;
                 }
@@ -165,11 +171,23 @@ public class PlayerScript : MonoBehaviour
             if (!bl.onScreen)
             {
                 sl.onScreen = true;
-                currPoint[0] = Vector2.Lerp(point[1], point[0], currAngle);
+                currPoint[0] = Vector2.Lerp(point[2], point[0], currAngle);
                 currPoint[1] = Vector2.Lerp(point[2], point[1], currAngle);
                 currPoint[2] = Vector2.up;
                 currPoint[3] = Vector2.Lerp(point[2], point[3], currAngle);
-                currPoint[4] = Vector2.Lerp(point[3], point[4], currAngle);
+                currPoint[4] = Vector2.Lerp(point[2], point[4], currAngle);
+
+                int i = 0;
+                foreach(GameObject l in sList.lasers)
+                {
+                    cc = currPoint[i];
+                    l.transform.up =cc/* - transform.position*/;
+                    //l.transform.LookAt(currPoint[i]);
+                    //Debug.DrawRay(transform.position, cc/*-transform.position*/, Color.red);
+                    //Camera.main.ScreenToWorldPoint(Input.mousePosition)
+                    i++;
+
+                }
 
             }
             else
