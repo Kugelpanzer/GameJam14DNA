@@ -16,12 +16,14 @@ public class EnemyBase : MonoBehaviour
     public int invurnableTimer;
     protected int currInvTime;
     protected bool inv;
-
+    protected Vector3 cc;
     protected Vector2 moveVector;
 
     protected void ConstMove()
     {
-        transform.Translate(moveVector.normalized*Time.deltaTime);
+        cc = moveVector.normalized;
+        transform.position += cc * Time.deltaTime;
+        //transform.Translate(moveVector.normalized*Time.deltaTime);
     }
     protected void ShootWeapon()
     {
@@ -48,7 +50,7 @@ public class EnemyBase : MonoBehaviour
 
 
     }
-    protected void EnemyMove()
+    protected virtual void EnemyMove()
     {
         moveVector = -Vector2.up *moveSpeed;
     }
@@ -73,7 +75,7 @@ public class EnemyBase : MonoBehaviour
 
     protected void DeathTrigger()
     {
-
+        Destroy(gameObject);
     }
 
     protected void InvTime()

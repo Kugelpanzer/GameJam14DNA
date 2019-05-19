@@ -59,7 +59,7 @@ public class PlayerScript : MonoBehaviour
 
     private void DeathTrigger()
     {
-
+        Debug.Log("umro si");
     }
 
     private void InvTime()

@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /* public GameObject tile;
+     public float sizeX,sizeY;
+
+
+     private void Generate()
+     {
+
+     }
+     // Start is called before the first frame update
+     void Start()
+     {
+         sizeX=tile.GetComponent<SpriteRenderer>().size.x;
+         sizeY = tile.GetComponent<SpriteRenderer>().size.y;
+     }
+
+     // Update is called once per frame
+     void Update()
+     {
+
+     }*/
+
+
+    //-------------------------------------------------------------  
+    public float scrollSpeed;
+    public float tileSizeZ;
+
+    private Vector3 startPosition;
+
     void Start()
     {
-        
+        startPosition = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
+
     {
-        
+
+        float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
+        transform.position = startPosition + Vector3.forward * newPosition;
     }
 }
