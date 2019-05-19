@@ -22,7 +22,7 @@ public class EnemyBase : MonoBehaviour
     protected void ConstMove()
     {
         cc = moveVector.normalized;
-        transform.position += cc * Time.deltaTime;
+        transform.position += cc * Time.deltaTime*moveSpeed;
         //transform.Translate(moveVector.normalized*Time.deltaTime);
     }
     protected void ShootWeapon()
@@ -52,7 +52,7 @@ public class EnemyBase : MonoBehaviour
     }
     protected virtual void EnemyMove()
     {
-        moveVector = -Vector2.up *moveSpeed;
+        moveVector = -Vector2.up ;
     }
 
     #region invurnable
@@ -107,5 +107,9 @@ public class EnemyBase : MonoBehaviour
         ConstMove();
         ShootWeapon();
         InvTime();
+    }
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

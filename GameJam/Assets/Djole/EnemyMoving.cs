@@ -66,7 +66,7 @@ public class EnemyMoving : EnemyBase
         if (currDuration > 0)
         {
 
-            moveVector = sumMoves * moveSpeed;
+            moveVector = sumMoves;
             //code for movment
 
             //

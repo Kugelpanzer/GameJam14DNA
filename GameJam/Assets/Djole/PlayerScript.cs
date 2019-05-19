@@ -195,6 +195,13 @@ public class PlayerScript : MonoBehaviour
                 sl.onScreen = false;
             }
         }
+        //OVDE ----------------------------------------------------------------------------------------
+        else
+        {
+            sl.onScreen = false;
+            bl.onScreen = false;
+        }
+
 
     }
 
