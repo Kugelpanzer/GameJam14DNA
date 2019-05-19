@@ -64,11 +64,11 @@ public class PlayerScript : MonoBehaviour
 
     private void InvTime()
     {
-        if(inv && currInvTime!=0)
+        if (inv && currInvTime >= 0)
         {
             currInvTime--;
         }
-        else if(inv && currInvTime == 0)
+        else if (inv && currInvTime < 0)
         {
             currInvTime = invurnableTimer;
             inv = false;

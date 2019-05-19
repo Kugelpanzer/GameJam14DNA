@@ -61,7 +61,7 @@ public class EnemyBase : MonoBehaviour
     {
         if (!inv)
         {
-            if (health <= 0)
+            if (health > 0)
             {
                 health -= demage;
                 inv = true;
@@ -71,6 +71,7 @@ public class EnemyBase : MonoBehaviour
                 DeathTrigger();
             }
         }
+
     }
 
     protected void DeathTrigger()
@@ -80,11 +81,11 @@ public class EnemyBase : MonoBehaviour
 
     protected void InvTime()
     {
-        if (inv && currInvTime != 0)
+        if (inv && currInvTime >= 0)
         {
             currInvTime--;
         }
-        else if (inv && currInvTime == 0)
+        else if (inv && currInvTime < 0)
         {
             currInvTime = invurnableTimer;
             inv = false;
