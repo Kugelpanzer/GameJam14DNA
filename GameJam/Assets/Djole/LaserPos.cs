@@ -12,11 +12,11 @@ public class LaserPos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.position = outPlace.position;
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (onScreen)
         {
