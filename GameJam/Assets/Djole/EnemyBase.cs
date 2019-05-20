@@ -18,6 +18,9 @@ public class EnemyBase : MonoBehaviour
     protected bool inv;
     protected Vector3 cc;
     protected Vector2 moveVector;
+    public GameObject exp;
+
+    AudioSource audioData;
 
     protected void ConstMove()
     {
@@ -63,6 +66,8 @@ public class EnemyBase : MonoBehaviour
         {
             if (health > 0)
             {
+                audioData = GetComponent<AudioSource>();
+                audioData.Play(0);
                 health -= demage;
                 inv = true;
             }
@@ -76,7 +81,12 @@ public class EnemyBase : MonoBehaviour
 
     protected void DeathTrigger()
     {
+        GameObject cc;
+        cc = Instantiate(exp);
+        cc.transform.position = transform.position;
+
         Destroy(gameObject);
+
     }
 
     protected void InvTime()

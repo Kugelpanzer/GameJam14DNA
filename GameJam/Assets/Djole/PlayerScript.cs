@@ -31,6 +31,7 @@ public class PlayerScript : MonoBehaviour
 
     public GameObject bigLaser;
     public GameObject smallLaserPos;
+    public GameObject DashShield;
 
     // public int protectedTimer;// time while imune to demage
 
@@ -87,7 +88,12 @@ public class PlayerScript : MonoBehaviour
         }
         if (currDashReload > 0)
         {
+            DashShield.transform.position = transform.position;
             currDashReload--;
+        }
+        else
+        {
+            DashShield.GetComponent<DashScript>().MoveOut();
         }
 
     }
